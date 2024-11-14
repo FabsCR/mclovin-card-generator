@@ -7,3 +7,16 @@ body {
   @apply bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Animation for upcoming implementations card */ 
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-zoom {
+  animation: zoom 3s ease-in-out infinite;
+}
