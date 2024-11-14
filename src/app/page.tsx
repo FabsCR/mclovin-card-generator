@@ -1,15 +1,14 @@
-import McLovin from '../components/McLovin';
-import Footer from '../components/Footer';
+import McLovin from "../components/McLovin";
+import Footer from "../components/Footer";
+import ThemeToggle from "../components/ThemeToggle";
 
 export default function Home() {
   return (
-    <main className="bg-gray-100 min-h-screen flex flex-col justify-between">
-      <div>
-        <h1 className="text-center text-4xl font-bold text-gray-800 mt-8">
-        🤓 Porque todos amamos a McLovin 🤓
-        </h1>
-        <McLovin />
-      </div>
+    <main className="min-h-screen flex flex-col justify-between">
+      <header className="flex justify-end p-4">
+        <ThemeToggle />
+      </header>
+      <McLovin />
       <Footer />
     </main>
   );

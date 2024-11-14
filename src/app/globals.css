@@ -2,20 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Set background and text color for light and dark modes */
 body {
-  color: var(--foreground);
-  background: var(--background);
+  @apply bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100;
   font-family: Arial, Helvetica, sans-serif;
 }
