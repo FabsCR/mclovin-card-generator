@@ -1,8 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "McLovin",
-  description: "Un tributo al gran McLovin",
+  title: "McLovin ID Card Generator - Create Your Own McLovin License",
+  description:
+    "Create your very own McLovin ID card with our fun and interactive generator! Inspired by the iconic Superbad movie, it's fast, easy, and totally free to use. Perfect for fans and nostalgic fun!",
 };
 
 export default function RootLayout({
@@ -11,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="en">
       <head>
         {/* Icons & metadata */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
