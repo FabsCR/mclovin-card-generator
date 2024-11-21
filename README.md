@@ -33,7 +33,7 @@ Because the world needs more McLovin. Simple as that. This app is dedicated to t
 
 ## 📜 License
 
-Feel free to use this project, but only if you promise to channel your inner McLovin at all times. Licensed under the [MIT License](LICENSE).
+This project is open-source and available under the [MIT License](./LICENSE).
 
 ---
 
