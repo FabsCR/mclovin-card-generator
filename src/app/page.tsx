@@ -12,10 +12,10 @@ export default function Home() {
         </h1>
         <ThemeToggle />
       </header>
-      <div className="flex justify-center items-center p-4 animate-slide-up">
+      <div className="flex justify-center items-center p-4 animate-slide-up delay-200">
         <McLovinCard />
       </div>
-      <div className="animate-slide-up">
+      <div className="animate-slide-up delay-400">
         <McLovin />
       </div>
       <Footer />
