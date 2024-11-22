@@ -62,7 +62,7 @@ const McLovinCard: React.FC = () => {
             const dx = canvasWidth * (5.5 / 500);
             const dy = canvasHeight * (4 / 300);
             const dWidth = canvasWidth * (170 / 500);
-            const dHeight = canvasHeight * (200 / 300);
+            const dHeight = canvasHeight * (198 / 300);
 
             ctx.drawImage(userImage, sx, sy, size, size, dx, dy, dWidth, dHeight);
             setIsGenerating(false);
