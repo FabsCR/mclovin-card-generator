@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       animation: {
-        "fade-in": "fadeIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards",
-        "slide-up": "slideUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards",
+        "fade-in": "fadeIn 1s ease-in-out",
+        "slide-up": "slideUp 1s ease-in-out",
       },
       keyframes: {
         fadeIn: {
@@ -19,7 +19,7 @@ export default {
           "100%": { opacity: "1" },
         },
         slideUp: {
-          "0%": { transform: "translateY(30px)", opacity: "0" },
+          "0%": { transform: "translateY(20px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
       },
