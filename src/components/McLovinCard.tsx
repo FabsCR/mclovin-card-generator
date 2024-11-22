@@ -7,12 +7,14 @@ const McLovinCard: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState<boolean>(false);
+  const [isCardReady, setIsCardReady] = useState<boolean>(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
       setSelectedImage(file);
+      setIsCardReady(false);
 
       const reader = new FileReader();
       reader.onload = () => {
@@ -64,6 +66,7 @@ const McLovinCard: React.FC = () => {
 
             ctx.drawImage(userImage, sx, sy, size, size, dx, dy, dWidth, dHeight);
             setIsGenerating(false);
+            setIsCardReady(true);
           };
         }
       };
@@ -73,6 +76,11 @@ const McLovinCard: React.FC = () => {
   };
 
   const downloadCard = () => {
+    if (!isCardReady) {
+      alert("Please generate the card before downloading!");
+      return;
+    }
+    
     if (!canvasRef.current) return;
 
     const canvas = canvasRef.current;
