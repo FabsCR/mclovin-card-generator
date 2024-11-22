@@ -88,14 +88,16 @@ const McLovin: React.FC = () => {
       )}
 
       {showRestart && !audioError && (
-        <button
-          onClick={restartSong}
-          className="mt-4 flex items-center justify-center px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-lg focus:outline-none transition duration-300 opacity-0 animate-fade-in"
-          aria-label="Restart Music"
-        >
-          <FaRedo className="mr-2" size={16} />
-          Restart Song
-        </button>
+        <div className="mt-4 animate-fade-in">
+          <button
+            onClick={restartSong}
+            className="flex items-center justify-center px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-lg focus:outline-none transition duration-300"
+            aria-label="Restart Music"
+          >
+            <FaRedo className="mr-2" size={16} />
+            Restart Song
+          </button>
+        </div>
       )}
     </div>
   );
